@@ -1,6 +1,10 @@
 # mediCenter
 mediCenter
 
+Add Extansion : 
+sqlite3 : SQLite Viewer - v0.3.13 - Florian Klampfer
+
+
 1] create repository in github
 
 2] clon your created repo in your local system
@@ -46,6 +50,9 @@ Django   5.0.4
 pip      24.0
 sqlparse 0.4.4
 tzdata   2024.1
+.
+.
+.
 
 9] create requirements.txt in your base dir
 ([env_name]) yout-path\mediCenter> type nul > requirements.txt
@@ -54,10 +61,33 @@ tzdata   2024.1
 ([env_name]) yout-path\mediCenter> pip freeze > requirements.txt
 
 11] Install module and package from requirements.txt file
-([env_name]) yout-path\mediCenter>` pip install -r requirements.txt`
+([env_name]) yout-path\mediCenter> pip install -r requirements.txt
 
 12] Creating a project
 ([env_name]) yout-path\mediCenter> django-admin startproject [project_name] .
 
 13] Creating the app
 ([env_name]) yout-path\mediCenter> python manage.py startapp [app_name]
+
+14] run your local-server
+([env_name]) yout-path\mediCenter> python manage.py runserver [port-number]
+
+15] make-migrations : create your model
+([env_name]) yout-path\mediCenter> python manage.py makemigrations
+
+16] migrate : add your table in database
+([env_name]) yout-path\mediCenter> python manage.py migrate
+
+17] create admin
+([env_name]) yout-path\mediCenter> python manage.py createsuperuser
+Username (leave blank to use 'hello'): admin
+Email address: admin
+Error: Enter a valid email address.
+Email address: admin@gmail.com
+Password:
+Password (again):
+The password is too similar to the username.
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
